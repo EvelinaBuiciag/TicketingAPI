@@ -1,0 +1,17 @@
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\UseCases.deps.json
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\UseCases.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\ref\UseCases.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\UseCases.pdb
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.csproj.AssemblyReference.cache
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.AssemblyInfoInputs.cache
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.AssemblyInfo.cs
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\ref\UseCases.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.pdb
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\Core.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\Repository.dll
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\Repository.pdb
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\bin\Debug\net5.0\Core.pdb
+C:\Users\Lenovo i7\source\repos\TicketingAPI\UseCases\obj\Debug\net5.0\UseCases.csproj.CopyComplete

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GoL1x2fBH3tzU3XC91XMAy/fLTZ2Y5m0g8TposmokQGEC1u9QkIdrKXShIcRE4wZJ1P6U1snxgWP/nE6rH1dvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lenovo i7\\source\\repos\\TicketingAPI\\Testing\\Testing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo i7\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\Lenovo i7\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
