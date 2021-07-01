@@ -26,10 +26,6 @@ namespace WebApp
             builder.Services.AddTransient<IOwnerRepository, OwnerRepository>();
             builder.Services.AddTransient<ITicketRepository, TicketRepository>();
             builder.Services.AddTransient<ITicketsScreenUseCases, TicketsScreenUseCases>();
-           // builder.Services.AddTransient<ITicketScreenUseCases, TicketScreenUseCases>();
-
-            //builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-
             await builder.Build().RunAsync();
         }
     }

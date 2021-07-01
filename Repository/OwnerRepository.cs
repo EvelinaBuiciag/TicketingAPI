@@ -35,22 +35,6 @@ namespace Repository
 
             return await webApiExecuter.InvokeGet<IEnumerable<Ticket>>(uri);
         }
-
-        //public async Task<int> CreateAsync(Owner owner)
-        //{
-        //    owner = await webApiExecuter.InvokePost("api/owners", owner);
-        //    return owner.OwnerId;
-        //}
-
-        //public async Task UpdateAsync(Owner owner)
-        //{
-        //    await webApiExecuter.InvokePut($"api/owners/{owner.OwnerId}", owner);
-        //}
-
-        //public async Task DeleteAsync(int id)
-        //{
-        //    await webApiExecuter.InvokeDelete($"api/owners/{id}");
-        //}
     }
 }
 

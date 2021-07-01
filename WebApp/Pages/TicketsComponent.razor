@@ -1,5 +1,4 @@
-﻿@*@page "/tickets"*@
-@page "/"
+﻿@page "/tickets"
 
 @inject ITicketsScreenUseCases TicketsScreenUseCases
 
@@ -10,7 +9,11 @@
 <ul>
     @foreach (var ticket in tickets)
     {
-        <li>@ticket.Title</li>
+    <li>
+        <NavLink href="@($"/tickets/{ticket.TicketId}")">
+            @ticket.Title
+        </NavLink>
+    </li>
     }
 </ul>
 

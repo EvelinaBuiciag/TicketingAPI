@@ -1,5 +1,4 @@
-﻿@page "/owners"
-@*@page "/"*@
+﻿@page "/"
 
 @inject IOwnersScreenUseCases OwnersScreenUseCases
 
@@ -13,6 +12,11 @@
             <li>@owner.Name</li>
         }
     </ul>
+    <NavLink href="@($"/tickets")">
+        <button class="btn btn-primary" type="submit">
+            View All Tickets
+        </button>
+    </NavLink>
 }
 
 @code {

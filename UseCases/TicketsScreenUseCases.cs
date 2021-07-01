@@ -25,21 +25,7 @@ namespace UseCases
         {
             return await ownerRepository.GetOwnerTicketsAsync(ownerId);
         }
-        
-
-        //public async Task<IEnumerable<Ticket>> SearchTickets(string filter)
-        //{
-        //    if (int.TryParse(filter, out int ticketId))
-        //    {
-        //        var ticket = await ticketRepository.GetByIdAsync(ticketId);
-        //        var tickets = new List<Ticket>();
-        //        tickets.Add(ticket);
-        //        return tickets;
-        //    }
-
-        //    return await ticketRepository.GetAsync(filter);
-        //}
-
+       
         public async Task<IEnumerable<Ticket>> ViewOwnersTickets(int ownerId, string ownerName)
         {
             return await ownerRepository.GetOwnerTicketsAsync(ownerId, ownerName);

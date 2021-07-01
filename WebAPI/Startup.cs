@@ -24,24 +24,16 @@ namespace Ticketing
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            //using in memory db ONLY during dev
-            //if (_env.IsDevelopment())
-            //{
                 services.AddDbContext<TicketsContext>(options =>
                 {
                     options.UseInMemoryDatabase("Tickets");
                 });
-            //}
-
             services.AddApiVersioning(options =>
             {
                 options.ReportApiVersions = true;
                 options.AssumeDefaultVersionWhenUnspecified = true;
-                //options.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
-                //options.ApiVersionReader = new HeaderApiVersionReader("X-API-Version");
+           
             });
-
-            //services.AddVersionedApiExplorer(options => options.GroupNameFormat = "'v'VVV");
             services.AddCors(options =>
             {
                 options.AddDefaultPolicy(builder =>
@@ -56,12 +48,10 @@ namespace Ticketing
             services.AddControllers();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, TicketsContext context)
         {
             
-            //if (_env.IsDevelopment())
-            //{
+
                 app.UseDeveloperExceptionPage();
                 //Create the in-memory database for dev environment
                 context.Database.EnsureDeleted();
@@ -71,13 +61,6 @@ namespace Ticketing
                 //Configure OpenAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
-                //app.UseSwaggerUI(
-                //        options =>
-                //        {
-                //            options.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPI v1");
-                //        });
-           // }
-
             app.UseRouting();
 
             //app.UseAuthorization();
