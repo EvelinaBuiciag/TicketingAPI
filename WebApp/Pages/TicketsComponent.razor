@@ -1,0 +1,28 @@
+﻿@*@page "/tickets"*@
+@page "/"
+
+@inject ITicketsScreenUseCases TicketsScreenUseCases
+
+<h3>Tickets</h3>
+<br />
+@if (tickets != null)
+{
+<ul>
+    @foreach (var ticket in tickets)
+    {
+        <li>@ticket.Title</li>
+    }
+</ul>
+
+}
+    @code {
+        IEnumerable<Ticket> tickets;
+
+protected override async Task OnInitializedAsync()
+    {
+        tickets = await TicketsScreenUseCases.ViewTicketsAsync();
+    }
+
+    }
+
+  

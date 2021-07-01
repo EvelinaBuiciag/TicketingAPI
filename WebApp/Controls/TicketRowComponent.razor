@@ -1,0 +1,16 @@
+﻿
+
+@if (this.Ticket != null)
+{
+<tr>
+    <td>
+        <NavLink href="@($"ticket/{Ticket.TicketId}")">
+            @Ticket.Title
+        </NavLink>
+    </td>
+    <td>@Ticket.Description</td>
+    <td>@Ticket.Price.ToString("c")</td>
+</tr>}
+
+@code { [Parameter]
+            public Ticket Ticket { get; set; } }

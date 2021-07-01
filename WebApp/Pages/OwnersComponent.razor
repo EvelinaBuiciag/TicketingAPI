@@ -1,0 +1,26 @@
+﻿@page "/owners"
+@*@page "/"*@
+
+@inject IOwnersScreenUseCases OwnersScreenUseCases
+
+<h3>Owners</h3>
+<br />
+@if (owners != null)
+{
+    <ul>
+        @foreach (var owner in owners)
+        {
+            <li>@owner.Name</li>
+        }
+    </ul>
+}
+
+@code {
+    IEnumerable<Owner> owners;
+
+    protected override async Task OnInitializedAsync()
+    {
+        owners = await OwnersScreenUseCases.ViewOwnersAsync();
+    }
+
+}
